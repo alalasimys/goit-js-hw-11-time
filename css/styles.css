@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:900");
+
+:root {
+  --font: "Lato", sans-serif;
+  --big: "Montserrat", sans-serif;
+
+  --red: #ef2f3c;
+  --white: #f6f4f3;
+  --blue: #276fbf;
+  --dark: #183059;
+  --yellow: #f0a202;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin-top: 0;
+}
+
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: var(--font);
+  color: var(--white);
+
+  background-color: var(--blue);
+}
+
+h1 {
+  font-size: 44px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.timer {
+  display: flex;
+  color: var(--white);
+  justify-content: center;
+}
+
+.field {
+  width: 110px;
+  padding: 15px;
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  border-radius: 15%;
+}
+
+span {
+  display: block;
+}
+
+.value {
+  font-family: var(--big);
+  font-size: 54px;
+}
+
+.field:nth-child(1) {
+  background-color: var(--red);
+}
+.field:nth-child(2) {
+  background-color: var(--dark);
+}
+.field:nth-child(3) {
+  background-color: var(--white);
+  color: var(--dark);
+}
+.field:nth-child(4) {
+  background-color: var(--yellow);
+}
